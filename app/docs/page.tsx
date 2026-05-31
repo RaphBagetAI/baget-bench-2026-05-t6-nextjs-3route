@@ -1,52 +1,23 @@
-import React from 'react';
-
 export default function Docs() {
   return (
-    <article className="max-w-3xl mx-auto space-y-8">
-      <h1 className="text-4xl font-heading font-extrabold text-center">
-        Getting Started with Shipyard
-      </h1>
+    <section className="mt-12 max-w-4xl mx-auto">
+      <h1 className="font-sora text-4xl font-extrabold mb-6 text-center">Getting Started with Shipyard</h1>
 
-      <section>
-        <h2 className="text-2xl font-heading font-semibold mb-3">Introduction</h2>
-        <p>
-          Shipyard is a developer tools platform designed to accelerate your
-          team's software delivery process through automation, collaboration,
-          and insightful analytics.
-        </p>
-      </section>
+      <p className="mb-6 text-violet">
+        Shipyard empowers developers to streamline deployment workflows with ease and confidence. Follow these simple steps to get started:
+      </p>
 
-      <section>
-        <h2 className="text-2xl font-heading font-semibold mb-3">
-          Quick Start Guide
-        </h2>
-        <ol className="list-decimal list-inside space-y-2">
-          <li>Sign up for an account on the Shipyard platform.</li>
-          <li>Create your first project and configure your deployment settings.</li>
-          <li>Integrate your version control system for continuous deployment.</li>
-          <li>Set up automation workflows tailored to your team’s needs.</li>
-          <li>Monitor deployments and review analytics to optimize your process.</li>
-        </ol>
-      </section>
+      <ol className="list-decimal list-inside space-y-4 text-violet">
+        <li>Sign up for Shipyard via the pricing page and choose a plan that suits your needs.</li>
+        <li>Connect your projects from popular repositories and platforms.</li>
+        <li>Configure deployment pipelines using Shipyard's intuitive interface.</li>
+        <li>Deploy your applications with one click and monitor progress in real-time.</li>
+        <li>Get alerts and logs directly in your dashboard to keep deployments reliable.</li>
+      </ol>
 
-      <section>
-        <h2 className="text-2xl font-heading font-semibold mb-3">
-          Resources
-        </h2>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            <a href="https://docs.shipyard.com" className="text-gradientMid hover:underline">
-              Full Documentation
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/bench/shipyard" className="text-gradientMid hover:underline">
-              GitHub Repository
-            </a>
-          </li>
-          <li>Contact support at support@bench.com</li>
-        </ul>
-      </section>
-    </article>
+      <p className="mt-8">
+        For detailed API documentation and advanced configurations, please explore the Shipyard docs and support resources coming soon.
+      </p>
+    </section>
   );
 }

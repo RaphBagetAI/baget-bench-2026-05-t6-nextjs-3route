@@ -1,24 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: ["./app/**/*.{ts,tsx}", "./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        heading: ['Outfit', 'sans-serif'],
-        body: ['Plus Jakarta Sans', 'sans-serif'],
-      },
       colors: {
-        gradientStart: '#7C3AED', // purple
-        gradientMid: '#EC4899',   // pink
-        gradientEnd: '#F97316',   // orange
-        darkSlate: '#0F172A',
-        softGray: '#F8FAFC'
+        lavender: '#F0EDFF',
+        violet: '#4C1D95',
+        teal: '#14B8A6',
+        peach: '#FBBF77'
+      },
+      fontFamily: {
+        sora: ['Sora', 'sans-serif'],
+        karla: ['Karla', 'sans-serif'],
       },
       borderRadius: {
-        DEFAULT: '12px'
+        card: '12px',
+        full: '50%'
       },
       boxShadow: {
-        elevated: '0 4px 16px rgba(0, 0, 0, 0.06)'
+        'playful-violet': '0 0 10px 2px #4C1D95',
+        'playful-teal': '0 0 10px 2px #14B8A6',
+        'playful-peach': '0 0 10px 2px #FBBF77'
       }
     },
   },
